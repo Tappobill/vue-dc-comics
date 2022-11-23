@@ -1,0 +1,11 @@
+@mixin box80($box80: 'standard'){
+    width: 80%;
+    margin: auto;
+}
+
+@mixin reset($reset:'standard'){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
