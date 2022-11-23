@@ -57,10 +57,14 @@ export default {
    @include reset($reset:'standard');
 }
 
+.logo-head{
+    padding-bottom: 30px;
+}
+
 .header {
     @include box80($box80: 'standard');
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 ul {
@@ -83,7 +87,7 @@ ul {
 a:hover{
     color: cornflowerblue;
     cursor: pointer;
-    padding-bottom: 40px;
-    border-bottom: 5px solid cornflowerblue;
+    padding-bottom: 75.5px;
+    border-bottom: 5px solid #0C7CEC;
 }
 </style>
