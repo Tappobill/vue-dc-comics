@@ -67,7 +67,7 @@ export default {
 
 .black {
     height: 100px;
-    background-color: black;
+    background-color: #262626;
     text-align: start;
     color: white;
     font-size: 20px;
