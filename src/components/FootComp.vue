@@ -5,7 +5,7 @@
                 <div class="liste-foot">
                     <div class="comics-shop">
                         <div class="div-lista">
-                           <span class="title">DC COMICS</span>
+                            <span class="title">DC COMICS</span>
                             <ul>
                                 <li>Characters</li>
                                 <li>Comics</li>
@@ -17,7 +17,7 @@
                             </ul>
                         </div>
                         <div class="div-lista">
-                           <span class="title">SHOP</span>
+                            <span class="title">SHOP</span>
                             <ul>
                                 <li>Shop DC</li>
                                 <li>Shop DC Collectbles</li>
@@ -60,16 +60,31 @@
             </div>
         </div>
 
-        <div>
+        <div class="bg-gray">
+            <div class="foot-2">
+                <div>
+                    <button>SIGN-UP NOW!</button>
+                </div>
+                <div class="follow">
+                    <div>FOLLOW US</div>
+                    <div>
+                        <img src="../assets/img/footer-facebook.png" alt="">
+                        <img src="../assets/img/footer-twitter.png" alt="">
+                        <img src="../assets/img/footer-youtube.png" alt="">
+                        <img src="../assets/img/footer-pinterest.png" alt="">
+                        <img src="../assets/img/footer-periscope.png" alt="">
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'FootComp'
-    }
+export default {
+    name: 'FootComp'
+}
 </script>
 
 <style lang="scss" scoped>
@@ -80,52 +95,81 @@
     @include reset($reset: 'standard');
 }
 
-.foot{    
+.foot {
     background-image: url(../assets/img/footer-bg.jpg);
     text-align: start;
     color: white;
     background-repeat: no-repeat;
-    background-size: cover;       
+    background-size: cover;
 }
 
-.foot-1{
+.foot-1 {
     @include box80($box80: 'standard');
     display: flex;
 }
 
-.liste-foot{
+.liste-foot {
     display: flex;
     padding-bottom: 50px;
 }
 
-.div-lista{
+.div-lista {
     padding-top: 50px;
     margin-right: 50px;
 }
 
-.title{
+.title {
     font-weight: bold;
     font-size: 18px;
 }
 
-ul{
+ul {
     margin-top: 15px;
 }
 
-li{
+li {
     color: gray;
     margin-bottom: 5px;
 }
 
-.img-dc{
+.img-dc {
     background-image: url(../assets/img/dc-logo-bg.png);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.img-dc-padre{
+.img-dc-padre {
     width: 80%;
 }
 
+.bg-gray{
+    background-color: #262626;
+}
+
+.foot-2 {
+    @include box80($box80: 'standard');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.follow{
+    display: flex;
+    align-items: center;
+    color: #0C7CEC;
+    font-weight: bold;
+
+    img{
+        margin: 0 10px;
+    }
+}
+
+button{
+    border: 1px solid #0C7CEC;
+    background-color: #262626;
+    color: white;
+    padding: 15px;
+}
 </style>
