@@ -111,6 +111,7 @@ export default {
 .liste-foot {
     display: flex;
     padding-bottom: 50px;
+    width: 50%;
 }
 
 .div-lista {
